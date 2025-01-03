@@ -4,7 +4,7 @@ import Ducks from "./Ducks";
 import Login from "./Login";
 import MyProfile from "./MyProfile";
 import Register from "./Register";
-// import ProtectedRoute from "./ProtectedRoute";
+import ProtectedRoute from "./ProtectedRoute";
 import "./styles/App.css";
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         element={
           <ProtectedRoute isLoggedIn={isLoggedIn}>
             <MyProfile />
+            <MyProfile />
           </ProtectedRoute>
         }
       />
@@ -33,6 +34,7 @@ function App() {
         element={
           <div className="loginContainer">
             <Login />
+            <Login />
           </div>
         }
       />
@@ -40,6 +42,7 @@ function App() {
         path="/register"
         element={
           <div className="registerContainer">
+            <Register />
             <Register />
           </div>
         }
