@@ -25,7 +25,6 @@ function App() {
         element={
           <ProtectedRoute isLoggedIn={isLoggedIn}>
             <MyProfile />
-            <MyProfile />
           </ProtectedRoute>
         }
       />
@@ -34,7 +33,6 @@ function App() {
         element={
           <div className="loginContainer">
             <Login />
-            <Login />
           </div>
         }
       />
@@ -42,7 +40,6 @@ function App() {
         path="/register"
         element={
           <div className="registerContainer">
-            <Register />
             <Register />
           </div>
         }
